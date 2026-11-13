@@ -283,13 +283,23 @@ p { margin: 0 0 1em; }
 .footer a:hover { color: var(--accent); }
 
 /* Reveal animation */
-.reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
-.reveal.visible { opacity: 1; transform: none; }
-.no-js .reveal { opacity: 1; transform: none; }
+.js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.js .reveal.visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .card { transition: none; }
+}
+
+/* Print */
+@media print {
+  .nav, .hero-actions, .theme-toggle, .footer a[href="#top"], .skip { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .section, .hero { padding: 16pt 0; }
+  .section-alt, .contact { background: none; }
+  .tl-card, .edu-card, .card, .quote, .ielts-card { box-shadow: none; break-inside: avoid; }
+  .js .reveal { opacity: 1; transform: none; }
+  .photo-frame { transform: none; }
 }
 
 /* Responsive */
