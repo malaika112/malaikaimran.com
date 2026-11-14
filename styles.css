@@ -210,6 +210,7 @@ p { margin: 0 0 1em; }
 }
 .edu-icon svg, .card-icon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .edu-card > p { color: var(--muted); }
+.edu-card + .edu-card { margin-top: 20px; }
 .coursework { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 22px; }
 .coursework-label { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .coursework ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 24px; }
