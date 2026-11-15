@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Iris Authentication System: final-year project by Ayesha Saeed and Malaika Imran.
+
+00:00:05.000 --> 00:00:12.500
+How it works: CASIA-Iris-Thousand data, preprocessing, a custom CNN and a Django login.
+
+00:00:12.500 --> 00:00:27.800
+In the app: enrol with an iris image, then log in by selecting an iris image only.
+
+00:00:27.800 --> 00:00:36.400
+Inside the model: the selected image is converted to grayscale and resized to 150 × 150.
+
+00:00:36.400 --> 00:00:46.900
+Seven convolution stages extract features from the iris.
+
+00:00:46.900 --> 00:00:50.500
+The softmax output predicts class 0 with 99.97% confidence.
+
+00:00:50.500 --> 00:00:53.900
+Class 0 belongs to demo_user and the confidence is above 90%: authenticated.
+
+00:00:53.900 --> 00:01:02.600
+The app logs the user in. The dashboard shows the matched iris and 99.97% confidence.
+
+00:01:02.600 --> 00:01:09.000
+Security check: a mirrored copy of the eye gets no confident match, so access is denied.
+
+00:01:09.000 --> 00:01:14.200
+Source code, notebook and thesis: github.com/malaika112/iris-authentication-system
