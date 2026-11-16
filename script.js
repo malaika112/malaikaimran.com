@@ -1,6 +1,15 @@
 (function () {
   'use strict';
+
+  // Clickjacking defence: GitHub Pages cannot send X-Frame-Options / frame-ancestors headers,
+  // so refuse to run inside a frame on another site.
+  if (window.top !== window.self) {
+    try { window.top.location = window.self.location.href; } catch (e) { document.documentElement.hidden = true; }
+    return;
+  }
+
   var root = document.documentElement;
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Theme toggle
   var themeBtn = document.getElementById('theme-toggle');
@@ -78,6 +87,48 @@
     items.forEach(function (el) { io.observe(el); });
   } else {
     items.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  // Timeline line draws in when the experience list comes into view
+  var timeline = document.getElementById('timeline');
+  if (timeline) {
+    if ('IntersectionObserver' in window && !reduceMotion) {
+      var tlObs = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) { timeline.classList.add('drawn'); tlObs.disconnect(); }
+      }, { threshold: 0.15 });
+      tlObs.observe(timeline);
+    } else {
+      timeline.classList.add('drawn');
+    }
+  }
+
+  // Count-up numbers. The final value is already in the HTML (works without JS);
+  // this only animates from 0 to that exact value once it scrolls into view.
+  var counters = document.querySelectorAll('[data-count]');
+  function countUp(el) {
+    var raw = el.getAttribute('data-count');
+    var target = parseFloat(raw);
+    var decimals = (raw.split('.')[1] || '').length;
+    var suffix = el.getAttribute('data-suffix') || '';
+    var final = target.toFixed(decimals) + suffix;
+    if (isNaN(target)) return;
+    var start = null, duration = 1300;
+    function step(ts) {
+      if (start === null) start = ts;
+      var k = Math.min(1, (ts - start) / duration);
+      var eased = 1 - Math.pow(1 - k, 3);
+      el.textContent = k < 1 ? (target * eased).toFixed(decimals) + suffix : final;
+      if (k < 1) window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+  }
+  if (counters.length && 'IntersectionObserver' in window && !reduceMotion) {
+    var cObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { countUp(entry.target); cObs.unobserve(entry.target); }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { cObs.observe(el); });
   }
 
   // Experience filters

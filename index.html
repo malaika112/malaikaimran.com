@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-title" content="Malaika Imran">
   <title>Malaika Imran — AI & Software Engineer</title>
   <meta name="description" content="Malaika Imran is a software engineer from Islamabad, Pakistan. BS Software Engineering (Abasyn University), former Lab Engineer, Microsoft Certified: Azure AI Fundamentals, IELTS Academic 7.0.">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-9reP/hXaohFoG+TYgZjEcHDUO9IO48p9ldcm9y4P6Zs='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-9reP/hXaohFoG+TYgZjEcHDUO9IO48p9ldcm9y4P6Zs='; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; manifest-src 'self'; frame-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="author" content="Malaika Imran">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -116,11 +116,11 @@
               Get in touch
               <svg class="btn-icon stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/malaika-imran-39a955218/" target="_blank" rel="noopener">
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/malaika-imran-39a955218/" target="_blank" rel="noopener noreferrer">
               <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.83c0-1.15-.02-2.64-1.6-2.64-1.61 0-1.86 1.26-1.86 2.56v4.91h-4z"/></svg>
               LinkedIn
             </a>
-            <a class="btn btn-ghost" href="https://github.com/malaika112" target="_blank" rel="noopener">
+            <a class="btn btn-ghost" href="https://github.com/malaika112" target="_blank" rel="noopener noreferrer">
               <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
               GitHub
             </a>
@@ -156,32 +156,49 @@
           </li>
           <li class="reveal">
             <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg></span>
-            <strong>7.0</strong><span>IELTS Academic overall</span>
+            <strong data-count="7.0">7.0</strong><span>IELTS Academic overall</span>
           </li>
           <li class="reveal">
             <span class="bento-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span>
-            <strong>3</strong><span>Internships: AI &amp; Flutter</span>
+            <strong data-count="3">3</strong><span>Internships: AI &amp; Flutter</span>
           </li>
         </ul>
       </div>
     </section>
 
     <!-- About -->
-    <section class="section" id="about">
-      <div class="wrap about-grid">
-        <div class="section-head">
-          <p class="kicker">About</p>
-          <h2>Software engineer and volunteer.</h2>
+    <section class="section section-alt" id="about">
+      <div class="wrap">
+        <div class="section-head has-art">
+          <div class="head-text">
+            <p class="kicker">About</p>
+            <h2>Software engineer and volunteer.</h2>
+          </div>
+          <div class="section-art reveal" aria-hidden="true">
+            <svg viewBox="0 0 200 150">
+              <ellipse class="ill-shadow" cx="100" cy="138" rx="74" ry="7"/>
+              <rect class="ill-fill" x="40" y="26" width="120" height="82" rx="10"/>
+              <rect class="ill-line" x="40" y="26" width="120" height="82" rx="10"/>
+              <path class="ill-line" d="M26 116h148l-9 12H35z"/>
+              <path class="ill-line ill-coral draw" pathLength="1" d="M56 48h30"/>
+              <path class="ill-line draw d2" pathLength="1" d="M56 62h52"/>
+              <path class="ill-line draw d3" pathLength="1" d="M64 76h34"/>
+              <path class="ill-line ill-gold draw d4" pathLength="1" d="M56 90h22"/>
+              <path class="ill-line ill-coral" d="M126 52l-10 14 10 14M138 52l10 14-10 14"/>
+              <path class="ill-spark twinkle" d="M172 10l3.5 9 9 3.5-9 3.5-3.5 9-3.5-9-9-3.5 9-3.5z"/>
+              <circle class="ill-dot bob" cx="22" cy="44" r="5"/>
+            </svg>
+          </div>
         </div>
+        <div class="about-grid">
         <div class="about-body reveal">
           <p>I studied for a four-year Bachelor of Science in Software Engineering at Abasyn University, Islamabad Campus, from 2020 and was awarded the degree in June 2024.</p>
           <p>From September 2025 to May 2026 I worked as a Lab Engineer in the Computing Department at Abasyn University Islamabad. Alongside my studies and work I've completed three internships: Flutter development at Status 200 (2023), AI engineering at Virtual Soft Technologies (2025), and a four-week AI internship at YoungDev Interns.</p>
           <p>I'm Microsoft Certified in Azure AI Fundamentals and scored 7.0 overall in IELTS Academic. I also completed NAVTTC's three-month AI &amp; Machine Learning course at Air University (September to November 2025), and from 2022 to 2024 I volunteered with Karwan-e-Pakistan Trust, including efforts for women's empowerment.</p>
         </div>
-      </div>
-      <div class="wrap">
-        <div class="skill-groups" aria-label="Skills">
-          <div class="skill-group reveal">
+        <div class="skill-groups reveal" aria-label="Skills">
+          <p class="skills-title">Skills</p>
+          <div class="skill-group">
             <h3><span class="dot dot-1" aria-hidden="true"></span>AI &amp; Data</h3>
             <div class="skills">
               <span>Artificial Intelligence</span>
@@ -192,7 +209,7 @@
               <span>TensorFlow &amp; Keras</span>
             </div>
           </div>
-          <div class="skill-group reveal">
+          <div class="skill-group">
             <h3><span class="dot dot-2" aria-hidden="true"></span>Mobile &amp; Design</h3>
             <div class="skills">
               <span>Flutter</span>
@@ -201,7 +218,7 @@
               <span>Video Editing</span>
             </div>
           </div>
-          <div class="skill-group reveal">
+          <div class="skill-group">
             <h3><span class="dot dot-3" aria-hidden="true"></span>Software Engineering</h3>
             <div class="skills">
               <span>Web Engineering</span>
@@ -212,17 +229,33 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </section>
 
     <!-- Experience -->
-    <section class="section section-alt" id="experience">
+    <section class="section" id="experience">
       <div class="wrap">
-        <div class="section-head row">
-          <div>
+        <div class="section-head has-art">
+          <div class="head-text">
             <p class="kicker">Experience</p>
             <h2>Work experience &amp; internships</h2>
           </div>
+          <div class="section-art reveal" aria-hidden="true">
+            <svg viewBox="0 0 200 150">
+              <ellipse class="ill-shadow" cx="100" cy="138" rx="70" ry="7"/>
+              <path class="ill-line" d="M80 44V34a8 8 0 0 1 8-8h24a8 8 0 0 1 8 8v10"/>
+              <rect class="ill-fill" x="40" y="44" width="120" height="84" rx="14"/>
+              <rect class="ill-line" x="40" y="44" width="120" height="84" rx="14"/>
+              <path class="ill-line" d="M40 74h120"/>
+              <rect class="ill-line ill-coral" x="92" y="68" width="16" height="12" rx="3"/>
+              <path class="ill-line ill-coral draw" pathLength="1" d="M56 118l18-8 16 4 20-12 24-8"/>
+              <circle class="ill-dot pop" cx="134" cy="94" r="5"/>
+              <path class="ill-spark twinkle" d="M176 18l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="filters-row">
           <div class="filters" role="group" aria-label="Filter experience">
             <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
             <button type="button" class="filter" data-filter="work" aria-pressed="false">Work experience</button>
@@ -270,11 +303,26 @@
     </section>
 
     <!-- Projects -->
-    <section class="section" id="projects">
+    <section class="section section-alt" id="projects">
       <div class="wrap">
-        <div class="section-head">
-          <p class="kicker">Projects</p>
-          <h2>Featured project</h2>
+        <div class="section-head has-art">
+          <div class="head-text">
+            <p class="kicker">Projects</p>
+            <h2>Featured project</h2>
+          </div>
+          <div class="section-art reveal" aria-hidden="true">
+            <svg viewBox="0 0 200 150">
+              <path class="ill-line ill-gold" d="M24 36V22h14M176 36V22h-14M24 114v14h14M176 114v14h-14"/>
+              <path class="ill-fill" d="M30 75C56 38 144 38 170 75C144 112 56 112 30 75z"/>
+              <path class="ill-line" d="M30 75C56 38 144 38 170 75C144 112 56 112 30 75z"/>
+              <circle class="ill-fill2" cx="100" cy="75" r="24"/>
+              <circle class="ill-line ill-coral" cx="100" cy="75" r="24"/>
+              <path class="ill-thin" d="M100 54v8M100 88v8M79 75h8M113 75h8M85 60l5 5M110 85l5 5M115 60l-5 5M90 85l-5 5"/>
+              <circle class="ill-pupil" cx="100" cy="75" r="9"/>
+              <circle class="ill-glint" cx="104" cy="71" r="2.6"/>
+              <rect class="ill-scan" x="28" y="40" width="144" height="3" rx="1.5"/>
+            </svg>
+          </div>
         </div>
         <article class="project reveal">
           <div class="project-media">
@@ -284,33 +332,31 @@
               <a href="assets/iris-demo.mp4">Download the demo video (MP4)</a>
             </video>
           </div>
-          <div class="project-body">
-            <div class="project-info">
-            <span class="tag">Final-year project · BS Software Engineering</span>
-            <h3>Iris Authentication System</h3>
-            <p class="project-sub">Automatic Solution for Security in Banking Based on Iris Detection</p>
-            <p>A custom convolutional neural network recognises a person from an image of their iris, trained on the CASIA-Iris-Thousand dataset (20,000 images, 2,000 classes). A Django web application uses the model to log users in with an iris image instead of a password, accepting a match only when the model's confidence is above 90%.</p>
-            <p class="project-team">With Ayesha Saeed · Supervised by Dr. Amjad Khan · Abasyn University Islamabad Campus</p>
-            </div>
-            <div class="project-side">
+          <div class="project-meta">
             <ul class="project-stats" aria-label="Results reported in the thesis">
-              <li><strong>92%</strong><span>Test accuracy</span></li>
-              <li><strong>95.83%</strong><span>Validation accuracy</span></li>
+              <li><strong data-count="92" data-suffix="%">92%</strong><span>Test accuracy</span></li>
+              <li><strong data-count="95.83" data-suffix="%">95.83%</strong><span>Validation accuracy</span></li>
               <li><strong>0.0004</strong><span>Equal error rate</span></li>
             </ul>
             <div class="skills project-tech" aria-label="Technologies">
               <span>Python</span><span>TensorFlow / Keras</span><span>OpenCV</span><span>Django</span><span>CNN</span>
             </div>
+          </div>
+          <div class="project-info">
+            <span class="tag">Final-year project · BS Software Engineering</span>
+            <h3>Iris Authentication System</h3>
+            <p class="project-sub">Automatic Solution for Security in Banking Based on Iris Detection</p>
+            <p>A custom convolutional neural network recognises a person from an image of their iris, trained on the CASIA-Iris-Thousand dataset (20,000 images, 2,000 classes). A Django web application uses the model to log users in with an iris image instead of a password, accepting a match only when the model's confidence is above 90%.</p>
+            <p class="project-team">With Ayesha Saeed · Supervised by Dr. Amjad Khan · Abasyn University Islamabad Campus</p>
             <div class="project-actions">
-              <a class="btn btn-primary" href="https://github.com/malaika112/iris-authentication-system" target="_blank" rel="noopener">
+              <a class="btn btn-primary" href="https://github.com/malaika112/iris-authentication-system" target="_blank" rel="noopener noreferrer">
                 <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
                 View code on GitHub
               </a>
-              <a class="btn btn-ghost" href="https://github.com/malaika112/iris-authentication-system/blob/main/docs/thesis.pdf" target="_blank" rel="noopener">
+              <a class="btn btn-ghost" href="https://github.com/malaika112/iris-authentication-system/blob/main/docs/thesis.pdf" target="_blank" rel="noopener noreferrer">
                 <svg class="btn-icon stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
                 Read the thesis
               </a>
-            </div>
             </div>
           </div>
         </article>
@@ -320,9 +366,25 @@
     <!-- Education -->
     <section class="section" id="education">
       <div class="wrap">
-        <div class="section-head">
-          <p class="kicker">Education</p>
-          <h2>Academic background</h2>
+        <div class="section-head has-art">
+          <div class="head-text">
+            <p class="kicker">Education</p>
+            <h2>Academic background</h2>
+          </div>
+          <div class="section-art reveal" aria-hidden="true">
+            <svg viewBox="0 0 200 150">
+              <ellipse class="ill-shadow" cx="100" cy="140" rx="72" ry="6"/>
+              <path class="ill-fill" d="M36 108c22-9 42-9 64 0 22-9 42-9 64 0v20c-22-9-42-9-64 0-22-9-42-9-64 0z"/>
+              <path class="ill-line" d="M36 108c22-9 42-9 64 0 22-9 42-9 64 0v20c-22-9-42-9-64 0-22-9-42-9-64 0zM100 108v20"/>
+              <g class="bob">
+                <path class="ill-fill" d="M100 20l66 26-66 26-66-26z"/>
+                <path class="ill-line" d="M100 20l66 26-66 26-66-26z"/>
+                <path class="ill-line" d="M66 59v14c0 8 15 14 34 14s34-6 34-14V59"/>
+                <path class="ill-line ill-coral" d="M166 46v24"/>
+                <circle class="ill-dot" cx="166" cy="74" r="5"/>
+              </g>
+            </svg>
+          </div>
         </div>
         <div class="edu-grid">
           <div class="edu-card edu-main reveal">
@@ -373,9 +435,24 @@
     <!-- Certifications -->
     <section class="section section-alt" id="certifications">
       <div class="wrap">
-        <div class="section-head">
-          <p class="kicker">Certifications</p>
-          <h2>Credentials</h2>
+        <div class="section-head has-art">
+          <div class="head-text">
+            <p class="kicker">Certifications</p>
+            <h2>Credentials</h2>
+          </div>
+          <div class="section-art reveal" aria-hidden="true">
+            <svg viewBox="0 0 200 150">
+              <path class="ill-fill2" d="M80 92l-12 44 18-9 12 15 8-44z"/>
+              <path class="ill-line ill-coral" d="M80 92l-12 44 18-9 12 15 8-44"/>
+              <path class="ill-fill2" d="M120 92l12 44-18-9-12 15-8-44z"/>
+              <path class="ill-line ill-coral" d="M120 92l12 44-18-9-12 15-8-44"/>
+              <circle class="ill-fill" cx="100" cy="62" r="40"/>
+              <circle class="ill-line" cx="100" cy="62" r="40"/>
+              <circle class="ill-line ill-gold ill-dash spin" cx="100" cy="62" r="30"/>
+              <path class="ill-star pulse" d="M100 45l5.3 10.8 11.9 1.7-8.6 8.4 2 11.8L100 72l-10.6 5.7 2-11.8-8.6-8.4 11.9-1.7z"/>
+              <path class="ill-spark twinkle" d="M166 22l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+            </svg>
+          </div>
         </div>
 
         <article class="ielts-card reveal">
@@ -386,15 +463,15 @@
               <p class="tl-org">British Council · IDP · Cambridge English</p>
             </div>
             <div class="ielts-overall">
-              <strong>7.0</strong>
+              <strong data-count="7.0">7.0</strong>
               <span>Overall band</span>
             </div>
           </div>
           <ul class="bands" aria-label="IELTS band scores">
-            <li><span class="gauge g-80" aria-hidden="true"></span><span class="band-label">Listening</span><strong>8.0</strong><span class="band-cefr">CEFR C1</span></li>
-            <li><span class="gauge g-60" aria-hidden="true"></span><span class="band-label">Reading</span><strong>6.0</strong><span class="band-cefr">CEFR B2</span></li>
-            <li><span class="gauge g-60" aria-hidden="true"></span><span class="band-label">Writing</span><strong>6.0</strong><span class="band-cefr">CEFR B2</span></li>
-            <li><span class="gauge g-70" aria-hidden="true"></span><span class="band-label">Speaking</span><strong>7.0</strong><span class="band-cefr">CEFR C1</span></li>
+            <li><span class="gauge g-80" aria-hidden="true"></span><span class="band-label">Listening</span><strong data-count="8.0">8.0</strong><span class="band-cefr">CEFR C1</span></li>
+            <li><span class="gauge g-60" aria-hidden="true"></span><span class="band-label">Reading</span><strong data-count="6.0">6.0</strong><span class="band-cefr">CEFR B2</span></li>
+            <li><span class="gauge g-60" aria-hidden="true"></span><span class="band-label">Writing</span><strong data-count="6.0">6.0</strong><span class="band-cefr">CEFR B2</span></li>
+            <li><span class="gauge g-70" aria-hidden="true"></span><span class="band-label">Speaking</span><strong data-count="7.0">7.0</strong><span class="band-cefr">CEFR C1</span></li>
           </ul>
         </article>
 
@@ -421,9 +498,24 @@
     <!-- Community + testimonials -->
     <section class="section" id="community">
       <div class="wrap">
-        <div class="section-head">
-          <p class="kicker">Community</p>
-          <h2>Volunteering</h2>
+        <div class="section-head has-art">
+          <div class="head-text">
+            <p class="kicker">Community</p>
+            <h2>Volunteering</h2>
+          </div>
+          <div class="section-art reveal" aria-hidden="true">
+            <svg viewBox="0 0 200 150">
+              <ellipse class="ill-shadow" cx="100" cy="138" rx="72" ry="7"/>
+              <circle class="ill-fill" cx="50" cy="68" r="12"/>
+              <circle class="ill-line" cx="50" cy="68" r="12"/>
+              <path class="ill-line" d="M28 120c0-14 10-24 22-24s22 10 22 24"/>
+              <circle class="ill-fill" cx="150" cy="68" r="12"/>
+              <circle class="ill-line" cx="150" cy="68" r="12"/>
+              <path class="ill-line" d="M128 120c0-14 10-24 22-24s22 10 22 24"/>
+              <path class="ill-heart beat" d="M100 110s-30-18-30-38a15 15 0 0 1 30-6 15 15 0 0 1 30 6c0 20-30 38-30 38z"/>
+              <path class="ill-spark twinkle" d="M100 12l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+            </svg>
+          </div>
         </div>
         <div class="cards cards-2">
           <article class="card reveal">
@@ -444,7 +536,7 @@
           </article>
         </div>
 
-        <h2 class="sub-h2">What mentors say</h2>
+        <h3 class="sub-head">What mentors say</h3>
         <div class="quotes">
           <figure class="quote reveal">
             <blockquote>"Excellent critical thinking skills, demonstrated by their ability to analyze complex problems and develop innovative solutions."</blockquote>
@@ -463,6 +555,15 @@
       <div class="wrap">
         <div class="contact-panel reveal">
           <div class="contact-glow" aria-hidden="true"></div>
+          <div class="contact-art" aria-hidden="true">
+            <svg viewBox="0 0 220 90">
+              <path class="plane-trail" d="M6 80c34-4 52-34 86-34 22 0 28 12 44 10"/>
+              <g class="plane">
+                <path class="plane-body" d="M206 10l-62 22 18 10 6 20 11-15 19 8z"/>
+                <path class="plane-fold" d="M162 42l44-32"/>
+              </g>
+            </svg>
+          </div>
           <p class="kicker light">Contact</p>
           <h2>Let's work together.</h2>
           <p class="lead">Reach me by email, or connect with me on LinkedIn and GitHub.</p>
@@ -477,11 +578,11 @@
             </button>
           </div>
           <div class="social-row">
-            <a class="social" href="https://www.linkedin.com/in/malaika-imran-39a955218/" target="_blank" rel="noopener">
+            <a class="social" href="https://www.linkedin.com/in/malaika-imran-39a955218/" target="_blank" rel="noopener noreferrer">
               <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.83c0-1.15-.02-2.64-1.6-2.64-1.61 0-1.86 1.26-1.86 2.56v4.91h-4z"/></svg>
               LinkedIn
             </a>
-            <a class="social" href="https://github.com/malaika112" target="_blank" rel="noopener">
+            <a class="social" href="https://github.com/malaika112" target="_blank" rel="noopener noreferrer">
               <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
               GitHub: malaika112
             </a>
@@ -500,8 +601,8 @@
       <span>© <span id="year">2026</span> Malaika Imran</span>
       <span class="footer-links">
         <a href="mailto:malaikaimran4798@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/malaika-imran-39a955218/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/malaika112" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/malaika-imran-39a955218/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/malaika112" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="#top">Back to top ↑</a>
       </span>
     </div>
