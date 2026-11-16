@@ -1,0 +1,4 @@
+Contact: mailto:malaikaimran4798@gmail.com
+Expires: 2027-11-15T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://malaikaimran.com/.well-known/security.txt
